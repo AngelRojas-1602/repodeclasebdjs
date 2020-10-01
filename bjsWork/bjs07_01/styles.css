@@ -1,0 +1,22 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .circulito {
+    border: 1px solid red;
+  }
+  
+  .cuadrito {
+    border: 1px solid #000;
+    width: 100%;
+  }
+  
+  ul li:nth-child(2) {
+    color: red;
+  }
+  
+  /*
+    selector {
+      propiedades: valor;
+    }
+  */
