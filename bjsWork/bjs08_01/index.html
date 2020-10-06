@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 class="text-center">Perritos!</h1>
+      <form>
+        <div class="form-group">
+          <select id="razas" class="col-12 form-control">
+            <!--
+							<option value="valor">Descripcion</option>
+							<option value="valor">Descripcion</option>
+							<option value="valor">Descripcion</option>
+							<option value="valor">Descripcion</option>
+						-->
+          </select>
+        </div>
+        <button id="ver_imagen" type="button" class="btn btn-success btn-block">
+          Ver imagen
+        </button>
+      </form>
+
+      <div class="col-12 mt-3 text-center">
+        <figure>
+          <img id="imagen_perro" />
+        </figure>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
