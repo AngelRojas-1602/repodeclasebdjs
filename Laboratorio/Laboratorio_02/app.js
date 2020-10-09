@@ -60,9 +60,55 @@ getVolwels("Murcielago");
 
 // VI. ¿Es un subconjunto?
 
-function isSubset(set, subset){
+/*
+  Conjunto:
 
-}
+  Es un grupo de elementos que no se repiten y que no tienen
+  un orden en específico.
+
+  Subconjunto
+
+  Es un conjunto con los elementos de un conjunto más grande.
+  Todos los elementos del subconjunto DEBEN pertenecer
+  al conjunto más grande. El conjunto vacío es
+  subconjunto de todos los conjuntos.
+
+
+  A = {1,2,3,4,5}
+  B = {3,5}
+  C = {1}
+  D = {1,2,3,4,5}
+  F = {}
+
+  E = {1,6} <-- NO es un subconjunto de A, por que el 6 no esta en A
+*/
+
+export function isSubset(set, subset) {
+    if (subset.length === 0) {
+      return true;
+    }
+  
+    for (let i = 0; i < subset.length; i++) {
+      if (set.indexOf(subset[i]) === -1) {
+        return false;
+      }
+    }
+  
+    return true;
+  }
+  
+  /*
+    TDD (Test Driven Development)
+  
+    Es una metodología de desarrollo que consiste
+    en 4 pasos:
+  
+    1. Crear una prueba (unitaria) que falle
+    2. Agregar el código MÍNIMO para que la prueba pase
+    3. Refactorizar el código si es necesario
+    4. Repetir
+  */
+  
 
 isSubset([1,2,3,4,5],[3,4]);
 isSubset([5,4,3,2,1],[]);
